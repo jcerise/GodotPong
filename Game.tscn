@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://PlayerPaddle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://OpponentPaddle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node"]
+
+[node name="BallStartPos" type="Position2D" parent="."]
+
+[node name="PlayerStartPos" type="Position2D" parent="."]
+
+[node name="PlayerPaddle" parent="." instance=ExtResource( 1 )]
+
+[node name="OpponentPaddle" parent="." instance=ExtResource( 2 )]
+
+[node name="Ball" parent="." instance=ExtResource( 3 )]
+
+[connection signal="area_entered" from="PlayerPaddle" to="Ball" method="_on_PlayerPaddle_area_entered"]
+[connection signal="area_entered" from="OpponentPaddle" to="Ball" method="_on_OpponentPaddle_area_entered"]
