@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed = 200
+var speed = 100
 var screen_size
 var velocity
 var trigger_bounce_x: bool
