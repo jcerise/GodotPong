@@ -19,7 +19,7 @@ func _process(delta):
 	if rand_range(0, 1) >= opponent_handicap:
 		if ball_pos.y > position.y + 1:
 			velocity.y += 1
-		elif ball_node.position.y < position.y - 1:
+		elif ball_pos.y < position.y - 1:
 			velocity.y -= 1
 	
 	if velocity.length() > 0:
