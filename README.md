@@ -1,6 +1,8 @@
 # Godot Pong
 Continuing my journey of assessing different game engines, this is Pong written in Godot.
 
+![Pong in Godot](pong.png)
+
 # Licenses
 MIT License
 
